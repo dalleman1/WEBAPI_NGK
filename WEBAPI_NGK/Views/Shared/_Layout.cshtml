@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WEBAPI_NGK</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            WeatherStats
+        </header>
+        <nav id="navigation" class="staticnav">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+                <a asp-controller="Weatherinfoes" asp-action="Create">Submit</a>
+                <a asp-controller="Weatherinfoes" asp-action="Details">Retrieve</a>
+        </nav>
+        <main>
+            @RenderBody()
+        </main>
+        <footer>
+            Copyright &copy; Dalleman<br />
+            <a href="mailto:JavaJam@nowhere.com">monglade.dalsgaard@gmail.com</a>
+        </footer>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

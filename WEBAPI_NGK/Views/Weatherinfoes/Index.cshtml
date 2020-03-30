@@ -1,0 +1,56 @@
+﻿@model IEnumerable<WEBAPI_NGK.DataLayer.Models.Weatherinfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Weather info</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.clocktime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.temperature)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.humidity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.airpressure)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.clocktime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.temperature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.humidity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.airpressure)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.weatherinfoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.weatherinfoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.weatherinfoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,111 @@
+﻿body {
+    background-image: url(../Images/pineapple.jpg); 
+}
+
+#wrapper {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #001f3f;
+    min-width: 700px;
+    box-shadow: 5px 5px 5px #828282;
+}
+
+header {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#navigation {
+    background-color: #62acfc;
+    padding: 10px;
+    width: 100%;
+}
+
+#navigation a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.staticnav {
+    position: static;
+}
+
+
+footer {
+    color: #ffffff;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    clear: both;
+}
+
+    footer a:link {
+        color: #ffffff;
+    }
+
+    footer a:visited {
+        color: #ffffff;
+    }
+
+    footer a:hover {
+        color: #330000;
+    }
+
+header, nav, figure, footer {
+    display: block;
+}
+
+main {
+    padding: 10px 20px 30px;
+    background-color: #0094ff;
+    color: #000000;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    background-color: #0074D9;
+    color: #663300;
+    font-size: 1.2em;
+    border-bottom: 1px solid #000000;
+    padding: 5px 0 0 5px;
+    margin-right: 20px;
+    clear: left;
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 35px;
+    margin: 0;
+}
+
+.floatright {
+    padding-left: 20px;
+    float: right;
+}
+
+.floatleft {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #62acfc;
+}
