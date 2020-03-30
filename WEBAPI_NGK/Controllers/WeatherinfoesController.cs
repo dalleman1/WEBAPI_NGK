@@ -138,7 +138,6 @@ namespace WEBAPI_NGK.Controllers
 
         // POST: Weatherinfoes/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var weatherinfo = await _context.weatherinfos.FindAsync(id);
